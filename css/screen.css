@@ -366,6 +366,33 @@ a:focus
 \*------------------------------------*/
 
 /*
+    Component: header
+    ---
+    Main header of the website
+*/
+
+.c-header__nav {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .c-header {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        align-items: center;
+        flex-wrap: no-wrap;
+        justify-content: space-between;
+    }
+
+    .c-header__nav {
+        display: block;
+    }
+}
+
+/*
     Component: Logo
     ---
     Website main logo
@@ -418,7 +445,7 @@ a:focus
 .c-nav__link--meta,
 .c-nav__link--meta:visited,
 .c-nav__link--meta:active {
-    color: #6C6C75;
+    color: #6C6C75; /* light grey **/
 }
 
 .c-nav__link:hover,
@@ -431,8 +458,10 @@ a:focus
         display: -webkit-flex;
         display: -moz-flex;
         display: -ms-flex;
+        display: -o-flex;
         display: flex;
-        margin-left:0;
+        margin-left: -16px;
+        margin-right: -16px;
     }
 
     .c-nav__link {
